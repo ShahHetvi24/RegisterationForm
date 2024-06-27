@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body class="bg-animation">
+  <div class="box">
+    <h2>Registration Form</h2>
+    <form class="form" action="/addUser" method="post">
+      <div class="inputBox">
+        <input required name="username" onkeyup="this.setAttribute('value', this.value);" value="" autocomplete="username">
+        <label>Username</label>
+      </div>
+      <div class="inputBox">
+        <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="" autocomplete="email">
+        <label>Email</label>
+      </div>
+      <div class="inputBox">
+        <input type="password" name="password" required onkeyup="this.setAttribute('value', this.value);" value="" autocomplete="new-password">
+        <label>Password</label>
+      </div>
+      <input type="submit" name="sign-in" value="Sign In">
+    </form>
+  </div>
+</body>
+</html>
